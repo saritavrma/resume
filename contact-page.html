@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact</title>
+   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+   <link href='https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css' rel='stylesheet'>
+</head>
+<style>
+   body {
+      margin: 0;
+      padding: 0;
+      background: url(hand\ in-hand.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: sans-serif;
+   }
+
+   .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 98%;
+      padding: 20px;
+      background: #051129;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+   }
+
+   .logo {
+      position: relative;
+      font-size: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: default;
+      opacity: 0;
+      animation: slideRight 1s ease forwards;
+   }
+
+   .navbar a {
+      display: inline-block;
+      font-size: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500px;
+      margin-left: 35px;
+      transition: .3s;
+      opacity: 0;
+      animation: slideTop .5s ease forwards;
+      animation-delay: calc(.2s*var(--i));
+   }
+
+   .navbar a:hover {
+      color: rgb(39, 152, 197);
+   }
+
+   .start {
+      letter-spacing: 2px;
+      text-align: center;
+      padding-top: 70px;
+      animation: slideTop 3s ease forwards;
+   }
+
+   .start h1 {
+      font-size: 50px;
+
+   }
+
+   .start h3 {
+      font-size: 30px;
+
+   }
+
+   .start h2 {
+
+      font-size: 50px;
+   }
+
+   .box-up {
+      padding-top: 60px;
+      padding-left: 20px;
+
+   }
+
+   .box {
+      border: 2px solid rgb(39, 152, 197);
+      border-radius: 6%;
+      color: rgb(39, 152, 197);
+      background-color: #081b29;
+      height: 400px;
+      width: 400px;
+      font-size: 30px;
+      animation: slideTop 1s ease forwards;
+      animation-delay: calc(.2s * var(--i));
+      box-shadow: 0 0 50px rgb(39, 152, 197), 0 0 25px rgb(39, 152, 197);
+   }
+
+   .box h1 {
+      font-size: 40px;
+      text-align: center;
+   }
+
+   .box span {
+      color: rgb(39, 152, 197);
+   }
+
+   .box a {
+      list-style-type: none;
+      display: list-item;
+      padding-left: 30px;
+      padding-top: 20px;
+      color: aqua;
+   }
+
+   .box a:hover {
+      background: rgb(0, 0, 0);
+      color: rgb(39, 152, 197);
+      box-shadow: 0 0 20px rgb(39, 152, 197);
+   }
+
+   .details {
+      display: flex;
+      border: 2px solid rgb(39, 152, 197);
+      background-color: #081b29;
+      color: rgb(39, 152, 197);
+   }
+
+   .map {
+      width: 800px;
+      height: 450px;
+   }
+
+   .details2 {
+      padding-left: 40px;
+   }
+
+   .details2 a {
+
+      color: rgb(39, 152, 197);
+      font-size: 30px;
+   }
+
+   .details2 a:hover {
+      background: rgb(0, 0, 0);
+      color: rgb(39, 152, 197);
+      box-shadow: 0 0 20px rgb(39, 152, 197);
+   }
+
+   @keyframes slideRight {
+      0% {
+         transform: translateX(-100px);
+         opacity: 0;
+      }
+
+      100% {
+         transform: translateX(0px);
+         opacity: 1;
+      }
+   }
+
+   @keyframes slideTop {
+      0% {
+         transform: translateY(100px);
+         opacity: 0;
+      }
+
+      100% {
+         transform: translateY(0px);
+         opacity: 1;
+      }
+   }@media screen and (max-width:990px){
+   .details{
+      flex-direction: column-reverse;
+   }
+   .header
+   {
+      flex-direction: column;
+   }}
+</style>
+
+<body>
+   <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar">
+         <a href="index.html" style="--i:1" class="active"><span style="color: rgb(39, 152, 197);">Home</span></a>
+         <a href="about me.html" target="_blank" style="--i:2">About</a>
+         <a href="index.html" style="--i:3">Skill</a>
+         <a href="contact-page.html" style="--i:5">Contact</a>
+      </nav>
+   </header>
+
+   <div class="start">
+      <h1>Let's build</h1>
+      <h3>Something Great</h3>
+      <h2><span class="new-text"></span></h2>
+   </div>
+
+
+   <div class="box-up">
+      <div class="box">
+         <h1>Contact Me At</h1>
+         
+         <a href="https://wa.me/+917404470349" target="_blank" style="--i:8"><i class="fa fa-whatsapp" aria-hidden="true">
+            <span>/91+7404470349</span></i></a>
+         <a href="https://+917404470349" target="_blank" style="--i:9"><i class="fa fa-phone" aria-hidden="true">
+            <span>/Sarita Verma</span></i></a>
+         <a href="https://www.linkedin.com/in/sarita-verma-1352bb287/" target="_blank" style="--i:10"><i class="fa fa-linkedin" aria-hidden="true"><span>/Sarita Verma</span></i></a>
+         <a href="https://join.skype.com/invite/s4AR6bI9iNp1" target="_blank" style="--i:10"><i class="fa fa-skype" aria-hidden="true">
+            <span>/Sarita Verma</span></i></a>
+
+      </div>
+   </div><br><br>
+   <div class="details">
+      <div class="map">
+         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d777.5904446738881!2d75.72795044264012!3d29.053567475399678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912358bdf24cbfd%3A0x5760a3fb2744659e!2sHrikot%20gali%20no%206!5e0!3m2!1sen!2sin!4v1700240782130!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+          
+      </div>
+      <div class="details2">
+         <h1>Address : </h1>
+         <p><i class='bx bxs-location-plus'></i>Harikot , Hisar<br>125001 (Haryana)India</p>
+         <p><i class='bx bxs-phone-call'></i>91+7404470349</p>
+         <br> <br> <br> <br>
+     
+         <a href="https://wa.me/+917404470349" target="_blank" style="--i:8"><i class='bx bxl-whatsapp'></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="https://join.skype.com/invite/s4AR6bI9iNp1" target="_blank" style="--i:9"><i class="fa fa-skype" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+         <a href="https://www.linkedin.com/in/sarita-verma-1352bb287/" target="_blank" style="--i:10"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+         
+         <a href="https://wa.me/+917404470349" target="_blank" style="--i:8"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+         <a href="https://+917404470349" target="_blank" style="--i:9"><i class="fa fa-phone" aria-hidden="true">
+            </i></a>
+      </div>
+   </div>
+
+
+   <script src="contact.js"></script>
+</body>
+
+</html>
